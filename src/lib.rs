@@ -21,7 +21,7 @@ pub trait Plugin<E: ?Sized>: Key {
     /// type, it is important for implementers to remember that
     /// the result of `eval` is usually cached, so care should
     /// be taken when doing mutation on the extended type.
-    fn eval(&mut E) -> Result<Self::Value, Self::Error>;
+    fn eval(_: &mut E) -> Result<Self::Value, Self::Error>;
 }
 
 /// Defines an interface that extensible types must implement.

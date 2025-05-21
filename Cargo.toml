@@ -8,7 +8,7 @@ repository = "https://github.com/reem/rust-plugin"
 license = "MIT"
 
 [dependencies]
-typemap = "*"
+typemap = { git = "https://github.com/ayourtch/rust-typemap" }
 
 [dev-dependencies]
 void = "*"
